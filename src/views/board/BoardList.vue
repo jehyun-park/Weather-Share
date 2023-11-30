@@ -1,7 +1,12 @@
 <template>
   <div class="board-list">
+    <BoardWrite @post-added="addPost" />
     <div class="common-buttons">
-      <button type="button" class="w3-button w3-round w3-blue-gray">
+      <button
+        @click="post"
+        type="button"
+        class="w3-button w3-round w3-blue-gray"
+      >
         등록
       </button>
     </div>
@@ -33,11 +38,15 @@
 <script>
 export default {
   data() {},
-  mounted() {},
+  components: {},
   props: {
     게시글: Array,
   },
-  methods: {},
+  methods: {
+    post() {
+      this.$router.push('/board/write');
+    },
+  },
 };
 </script>
 

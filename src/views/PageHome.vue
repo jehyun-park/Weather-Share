@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <MidContainer />
+    <TheWeather />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import MidContainer from '@/components/MidContainer.vue';
+import TheWeather from '@/components/TheWeather.vue';
 
 export default {
   name: 'PageHome',
   components: {
-    MidContainer,
+    TheWeather,
   },
 };
 </script>

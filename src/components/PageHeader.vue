@@ -2,10 +2,13 @@
   <header>
     <img src="../assets/logo2.png" alt="Vue logo" />
     <div id="nav">
-      <h4>Music Share</h4>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/board/list">게시판</router-link>
+      <h4><a class="logo" href="/">Weather Share</a></h4>
+      <router-link to="/" style="text-decoration: none">Home</router-link> |
+      <router-link to="/board/list" style="text-decoration: none"
+        >게시판</router-link
+      >
+      |
+      <router-link to="/about" style="text-decoration: none">About</router-link>
     </div>
   </header>
   <hr />
@@ -25,5 +28,8 @@ img {
 h4 {
   float: left;
   padding-left: 15px;
+}
+.logo {
+  text-decoration: none;
 }
 </style>

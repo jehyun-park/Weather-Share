@@ -1,20 +1,30 @@
 <template>
   <div class="main-page">
     <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-      <div class="grid-item">7</div>
-      <div class="grid-item">8</div>
+      <div v-for="videoId in videoIds" :key="videoId" class="grid-item"></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      videoIds: [
+        'wxQZ48TgqZk',
+        'Cnq-YIdED6Y',
+        'wxQZ48TgqZk',
+        'wxQZ48TgqZk',
+        'wxQZ48TgqZk',
+        'wxQZ48TgqZk',
+        'wxQZ48TgqZk',
+        'wxQZ48TgqZk',
+      ],
+    };
+  },
+  mounted() {},
+  methods: {},
+};
 </script>
 
 <style>
