@@ -1,4 +1,4 @@
-# music-share
+# weather-share
 
 ## Project setup
 ```
